@@ -1,18 +1,19 @@
-student_name = ""
-student_email = ""
-student_age = 0
-student_id = 0
+students = []
 def add_student ():
           student_name = input("Enter Student Name:")
           student_email = input("Enter Student Email:" )
           student_age = int(input("Enter Student Age:"))
-          print("successfully added student")
+          print("successfully added student") 
+          students_data (student_name, student_email, student_age ) 
+          students.append(students_data) 
 def display_student ():
-      print("the student id is: ", studet_id)
-          print("the student name is: ", student_name)
-          print("the student email is: ", student_email)
-          print("the student age is: ", student_age)
-          print(" display student ") 
+          for std in students:
+                    
+              print("the student id is: ",std[0])
+              print("the student name is: ",std[1])
+              print("the student email is: ", std[2])
+              print("the student age is: ", std[3])
+              print(" display student ") 
 def search_student ():
       
 
